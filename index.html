@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pulmonary Rehab | Video Hub</title>
+  <meta name="description" content="Pulmonary rehabilitation education and a guided video for breathing and exercise." />
+  <style>
+    :root{
+      --bg:#0b1220; --card:rgba(255,255,255,.06); --text:#e8eefc; --muted:rgba(232,238,252,.78);
+      --line:rgba(255,255,255,.14); --accent:#4f7cff; --warn:#fbbf24; --shadow:0 12px 40px rgba(0,0,0,.35);
+      --radius:18px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(900px 500px at 10% 10%, rgba(79,124,255,.25), transparent 60%),
+        radial-gradient(900px 500px at 90% 30%, rgba(34,197,94,.18), transparent 60%),
+        var(--bg);
+    }
+    .container{width:min(980px,92vw); margin:0 auto; padding:22px 0 60px}
+    header{
+      display:flex; gap:14px; align-items:center; justify-content:space-between;
+      padding:16px 18px; border:1px solid var(--line); border-radius:var(--radius);
+      background:var(--card); box-shadow:var(--shadow); backdrop-filter: blur(8px);
+      position:sticky; top:12px; z-index:5;
+    }
+    .brand h1{font-size:18px; margin:0}
+    .brand p{margin:4px 0 0; font-size:13px; color:var(--muted)}
+    nav{display:flex; flex-wrap:wrap; gap:10px; justify-content:flex-end}
+    nav a{
+      text-decoration:none; font-size:13px; padding:9px 10px; border-radius:12px;
+      border:1px solid transparent; color:var(--muted)
+    }
+    nav a:hover{border-color:var(--line); color:var(--text); background:rgba(255,255,255,.04)}
+    .hero{
+      margin-top:18px; padding:26px; border-radius:var(--radius);
+      border:1px solid var(--line); background:var(--card); box-shadow:var(--shadow);
+      display:grid; gap:14px;
+    }
+    .hero h2{margin:0; font-size:30px; letter-spacing:.2px}
+    .hero p{margin:0; color:var(--muted); line-height:1.6}
+    .btnrow{display:flex; flex-wrap:wrap; gap:10px; margin-top:6px}
+    .btn{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:11px 12px; border-radius:14px; font-weight:700; font-size:14px;
+      background:var(--accent); color:white; text-decoration:none; border:0;
+    }
+    .btn.secondary{background:rgba(255,255,255,.10); color:var(--text); border:1px solid var(--line)}
+    .grid{display:grid; grid-template-columns:repeat(12,1fr); gap:14px; margin-top:14px}
+    .card{
+      grid-column:span 12;
+      padding:18px; border-radius:var(--radius); border:1px solid var(--line);
+      background:var(--card); box-shadow:var(--shadow);
+    }
+    @media (min-width:900px){
+      .card.half{grid-column:span 6;}
+    }
+    h3{margin:0 0 10px; font-size:18px}
+    .small{font-size:13px; color:var(--muted); line-height:1.6}
+    ul{margin:10px 0 0; padding-left:18px; color:var(--muted); line-height:1.7}
+    .notice{
+      border-left:4px solid var(--warn);
+      background:rgba(251,191,36,.10);
+    }
+    .video{
+      border:1px solid var(--line); border-radius:var(--radius); overflow:hidden;
+      background:rgba(0,0,0,.18);
+    }
+    iframe{width:100%; height:360px; display:block; border:0}
+    .video .meta{padding:12px 14px}
+    .video .meta strong{display:block; margin-bottom:4px}
+    footer{margin-top:18px; color:var(--muted); font-size:12px; line-height:1.6}
+    .tag{display:inline-block; padding:4px 8px; border-radius:999px; border:1px solid var(--line); font-size:12px; color:var(--muted)}
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <h1>Pulmonary Rehab | Video Hub</h1>
+        <p>One video • Key tips • Safety advice</p>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#safety">Safety</a>
+        <a href="#video">Video</a>
+        <a href="#breathlessness">mMRC scale</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h2>Learn, practice, and pace your breathing</h2>
+      <p>
+        This page supports people with long-term lung conditions (e.g., bronchiectasis, COPD) while waiting for or attending pulmonary rehabilitation.
+        Use the video and tips below to practise safely at home.
+      </p>
+      <div class="btnrow">
+        <a class="btn" href="#video">Watch the video</a>
+        <a class="btn secondary" href="#safety">Read safety advice</a>
+      </div>
+    </section>
+
+    <div class="grid">
+      <section class="card half" id="about">
+        <h3>What is pulmonary rehabilitation?</h3>
+        <p class="small">
+          Pulmonary rehabilitation is a programme combining exercise training, breathing strategies, and education to help reduce breathlessness,
+          improve fitness, and support everyday activities.
+        </p>
+        <ul>
+          <li><b>Benefits:</b> better walking tolerance, symptom control, and confidence.</li>
+          <li><b>Includes:</b> aerobic exercise, strengthening, breathing techniques, pacing, and self-management.</li>
+          <li><b>Tip:</b> start small and build up gradually.</li>
+        </ul>
+      </section>
+
+      <section class="card half notice" id="safety">
+        <h3>Safety & when to stop</h3>
+        <p class="small">Stop and seek advice if you have:</p>
+        <ul>
+          <li>Chest pain/tightness or new severe breathlessness</li>
+          <li>Dizziness, fainting, or feeling very unwell</li>
+          <li>Blue lips/fingers, confusion, or severe wheeze</li>
+          <li>Severe oxygen drop if you monitor SpO₂ (follow your clinician’s target)</li>
+        </ul>
+        <p class="small">
+          If symptoms are severe or sudden, call emergency services. If you’re unsure, contact your clinical team.
+        </p>
+      </section>
+
+      <section class="card" id="video">
+        <h3>Video</h3>
+        <p class="small">
+          Watch the guided video below. Pause when needed, and use recovery breathing between efforts.
+        </p>
+
+        <div class="video">
+          <iframe
+            src="https://www.youtube.com/embed/ZFVEzeXEgSs"
+            title="Pulmonary rehab video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+          <div class="meta">
+            <strong>Guided pulmonary rehab video</strong>
+            <span class="small">Aim for comfortable effort. Slow down if you can’t speak in short sentences.</span>
+          </div>
+        </div>
+
+        <p class="small" style="margin-top:10px">
+          Prefer to open it in YouTube?
+          <a href="https://www.youtube.com/watch?v=ZFVEzeXEgSs" target="_blank" rel="noreferrer">Click here</a>.
+        </p>
+      </section>
+
+      <section class="card" id="breathlessness">
+        <h3>Breathlessness rating (mMRC)</h3>
+        <p class="small">
+          The <b>Modified Medical Research Council (mMRC)</b> scale grades breathlessness in daily life:
+        </p>
+        <ul>
+          <li><b>0:</b> breathless only with strenuous exercise</li>
+          <li><b>1:</b> short of breath when hurrying or walking up a slight hill</li>
+          <li><b>2:</b> walk slower than peers or stop after ~15 minutes on level ground</li>
+          <li><b>3:</b> stop after ~100 metres or a few minutes on level ground</li>
+          <li><b>4:</b> too breathless to leave the house or breathless when dressing</li>
+        </ul>
+        <p class="small">You can note your score at baseline and review changes over time.</p>
+      </section>
+    </div>
+
+    <footer>
+      <div class="tag">YouTube privacy tip</div>
+      <p>
+        If you don’t want the video searchable, set it to <b>Unlisted</b> (not Private) so it still plays on this page.
+      </p>
+      <p>
+        <span class="tag">Created by:</span> Students / Bronchiectasis Clinic project team (edit as needed).
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
